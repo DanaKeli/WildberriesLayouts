@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">WildberriesLayouts</string>
+    <string name="mp3">Mp3 плеер</string>
+    <string name="telegram">Телеграм</string>
+    <string name="calculator">Калькулятор</string>
+    <string name="facebook">Фейсбук</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="now_playing">Сейчас играет</string>
+    <string name="album_name">Название альбома</string>
+    <string name="song_name">Название песни</string>
+    <string name="singer">Исполнитель</string>
+    <string name="total_time">5:27</string>
+    <string name="time">00:00</string>
+    <string name="qr">qr</string>
+    <string name="search">search</string>
+    <string name="menu_more">menu_more</string>
+    <string name="name">Имя Фамилия</string>
+    <string name="status">online</string>
+    <string name="contacts_title">Account</string>
+    <string name="phone_number">+7 (950) 555-55-55</string>
+    <string name="phone_description">Tap to change phone number</string>
+    <string name="user_name">@rh7ddfv</string>
+    <string name="username">Username</string>
+    <string name="bio">Статус</string>
+    <string name="bio_description">Bio</string>
+    <string name="settings">Settings</string>
+    <string name="notifications_and_sounds">Notifications and Sounds</string>
+    <string name="privacy_and_security">Privacy and Security</string>
+    <string name="data_and_storage">Data and Storage</string>
+    <string name="chat_settings">Chat Settings</string>
+    <string name="chat_folders">Chat Folders</string>
+    <string name="devices">Devices</string>
+    <string name="entered_data">789+56</string>
+    <string name="result">845</string>
+    <string name="clean_btn">C</string>
+    <string name="staples">()</string>
+    <string name="percent">%</string>
+    <string name="divide">/</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="times">Х</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="mines">-</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="plus">+</string>
+    <string name="sign">+/-</string>
+    <string name="zero">0</string>
+    <string name="coma">,</string>
+    <string name="equal">=</string>
+    <string name="phone_email">Телефон или электронный адрес</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="forgot_password">Забыли\nпароль?</string>
+
+</resources>
