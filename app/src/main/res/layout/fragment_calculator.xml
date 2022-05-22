@@ -32,16 +32,16 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btnRegular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:background="@android:color/transparent"
             android:src="@android:drawable/ic_menu_recent_history"
-            android:layout_alignParentStart="true"
             app:tint="@color/gray" />
 
         <ImageButton
@@ -69,9 +69,9 @@
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:foregroundGravity="right"
             android:layout_alignParentEnd="true"
             android:background="@android:color/transparent"
+            android:foregroundGravity="right"
             android:src="@android:drawable/ic_input_delete"
             app:tint="@color/gray" />
     </RelativeLayout>
@@ -81,255 +81,256 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_marginTop="15dp"
-        android:background="@color/gray"
-        />
+        android:background="@color/gray" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="4"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-       android:paddingHorizontal="50dp"
-       android:layout_gravity="center">
+        android:useDefaultMargins="true"
+        android:columnCount="4">
 
-    <Button
-        android:id="@+id/btnClean"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/clean_btn"
-        android:textColor="@color/dark_red"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"         />
+        <Button
+            android:id="@+id/btnClean"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
 
-    <Button
-        android:id="@+id/btnStaples"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/staples"
-        android:textColor="@color/dark_green"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-         />
+            android:text="@string/clean_btn"
+            android:textColor="@color/dark_red"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
-    <Button
-        android:id="@+id/btnPercent"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/percent"
-        android:textColor="@color/dark_green"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-        />
+        <Button
+            android:id="@+id/btnStaples"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
 
-    <Button
-        android:id="@+id/btnDivide"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/divide"
-        android:textColor="@color/dark_green"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-         />
+            android:text="@string/staples"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
+        <Button
+            android:id="@+id/btnPercent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
 
+            android:text="@string/percent"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
-    <Button
-        android:id="@+id/btnSeven"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/seven"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-        />
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shape_circle_btn"
 
-    <Button
-        android:id="@+id/btnEight"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/eight"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-       />
-
-    <Button
-        android:id="@+id/btnNine"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/nine"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-         />
-
-    <Button
-        android:id="@+id/btnTimes"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/times"
-        android:textColor="@color/dark_green"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-         />
+            android:text="@string/divide"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
 
-    <Button
-        android:id="@+id/btnFour"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/four"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/shape_circle_btn"
 
-        />
+            android:text="@string/seven"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
-    <Button
-        android:id="@+id/btnFive"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/five"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
 
-        />
+            android:text="@string/eight"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
-    <Button
-        android:id="@+id/btnSix"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/six"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
 
-        />
+            android:text="@string/nine"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
-    <Button
-        android:id="@+id/btnMines"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/mines"
-        android:textColor="@color/dark_green"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
+        <Button
+            android:id="@+id/btnTimes"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shape_circle_btn"
 
-        />
+            android:text="@string/times"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
 
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/shape_circle_btn"
 
-    <Button
-        android:id="@+id/btnOne"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/one"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-        />
+            android:text="@string/four"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton"
 
-    <Button
-        android:id="@+id/btnTwo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/two"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-        />
+            />
 
-    <Button
-        android:id="@+id/btnThree"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/three"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-        />
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
 
-    <Button
-        android:id="@+id/btnPlus"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/plus"
-        android:textColor="@color/dark_green"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-       />
+            android:text="@string/five"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton"
+
+            />
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
+
+            android:text="@string/six"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton"
+
+            />
+
+        <Button
+            android:id="@+id/btnMines"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shape_circle_btn"
+
+            android:text="@string/mines"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton"
+
+            />
 
 
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/shape_circle_btn"
 
-    <Button
-        android:id="@+id/btnSign"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/sign"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:theme="@style/CalculatorButton"
-         />
+            android:text="@string/one"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
-    <Button
-        android:id="@+id/btnZero"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/zero"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-        />
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
 
-    <Button
-        android:id="@+id/btnComa"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/coma"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorButton"
-         />
+            android:text="@string/two"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
 
-    <Button
-        android:id="@+id/btnEqual"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/shape_circle_btn"
-        android:text="@string/equal"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:theme="@style/CalculatorGreenButton"
-         />
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
+
+            android:text="@string/three"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shape_circle_btn"
+
+            android:text="@string/plus"
+            android:textColor="@color/dark_green"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
+
+
+        <Button
+            android:id="@+id/btnSign"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/shape_circle_btn"
+
+            android:text="@string/sign"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:theme="@style/CalculatorButton" />
+
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
+
+            android:text="@string/zero"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
+
+        <Button
+            android:id="@+id/btnComa"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_circle_btn"
+
+            android:text="@string/coma"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorButton" />
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shape_circle_btn"
+
+            android:text="@string/equal"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:theme="@style/CalculatorGreenButton" />
 
     </GridLayout>
 

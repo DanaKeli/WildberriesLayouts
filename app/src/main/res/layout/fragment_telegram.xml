@@ -89,11 +89,12 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/motion_layout">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:id="@+id/layout_contacts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -207,9 +208,9 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/bio" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:id="@+id/layout_settings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -217,15 +218,11 @@
                 android:background="@color/white"
                 android:paddingStart="28dp"
                 app:layout_constraintTop_toBottomOf="@id/layout_contacts"
-                tools:ignore="RtlSymmetry">
+                tools:ignore="RtlSymmetry"
+                android:orientation="vertical">
 
 
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.15" />
+
 
                 <TextView
                     android:id="@+id/tv_settings_title"
@@ -259,7 +256,7 @@
                     android:text="@string/notifications_and_sounds"
                     android:textColor="@color/black"
                     android:textSize="16sp"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/tv_settings_title"
                     tools:ignore="RtlSymmetry" />
 
@@ -269,7 +266,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="15dp"
                     android:background="@color/gray"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/tv_notifications" />
 
                 <ImageView
@@ -294,7 +291,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toTopOf="@+id/divider4"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/divider3"
                     tools:ignore="RtlSymmetry" />
 
@@ -304,7 +301,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="15dp"
                     android:background="@color/gray"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/tv_privacy" />
 
                 <ImageView
@@ -329,7 +326,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toTopOf="@+id/divider5"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/divider4"
                     tools:ignore="RtlSymmetry" />
 
@@ -339,7 +336,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="15dp"
                     android:background="@color/gray"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/tv_data" />
 
                 <ImageView
@@ -363,7 +360,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toTopOf="@+id/divider6"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/divider5"
                     tools:ignore="RtlSymmetry" />
 
@@ -373,7 +370,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="15dp"
                     android:background="@color/gray"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/tv_chat" />
 
                 <ImageView
@@ -397,7 +394,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toTopOf="@+id/divider7"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/divider6"
                     tools:ignore="RtlSymmetry" />
 
@@ -407,7 +404,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="15dp"
                     android:background="@color/gray"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/tv_folders" />
 
                 <ImageView
@@ -431,7 +428,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toTopOf="@+id/divider8"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/divider7"
                     tools:ignore="RtlSymmetry" />
 
@@ -441,12 +438,12 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="70dp"
                     android:background="@color/gray"
-                    app:layout_constraintStart_toEndOf="@id/guideline8"
+
                     app:layout_constraintTop_toBottomOf="@id/tv_devices" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
